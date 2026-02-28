@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Elevate Digital</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+<nav class="navbar">
+    <div class="logo">Elevate <span>Digital</span></div>
+    <ul>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#realisations">Réalisations</a></li>
+        <li><a href="#contact">Contact</a></li>
+    </ul>
+</nav>
+
+<div class="hero">
+    <h1 class="hero-title">
+        Elevate <span>Digital</span>
+    </h1>
+
+    <p class="hero-subtitle">
+        Nous créons des expériences digitales élégantes 
+        qui transforment votre présence en ligne en véritable signature professionnelle.
+    </p>
+
+    <a href="#services" class="button">Explorer nos services</a>
+</div>
+
+<section id="services">
+    <h2>Nos Services</h2>
+
+    <div class="services">
+       <div class="card">
+    <h3>🎓 Portfolio Étudiant & Professionnel</h3>
+    <p>
+        Un site moderne et structuré pour valoriser votre profil,
+        présenter vos compétences et renforcer votre crédibilité
+        auprès des recruteurs ou partenaires.
+    </p>
+    <div class="price">À partir de 20 000 FCFA</div>
+</div>
+
+       <div class="card">
+    <h3>💼 Mini Site Business</h3>
+    <p>
+        Une vitrine professionnelle pour présenter vos services,
+        attirer des clients et développer votre présence en ligne
+        avec une image sérieuse et impactante.
+    </p>
+    <div class="price">À partir de 35 000 FCFA</div>
+</div>
+
+    <div class="card">
+    <h3>💎 Site Personnalisé Premium</h3>
+    <p>Solution sur mesure adaptée à vos besoins spécifiques.</p>
+
+    <ul class="custom-list">
+        <li>✔ Fonctionnalités avancées</li>
+        <li>✔ Design 100% personnalisé</li>
+        <li>✔ Intégrations spécifiques</li>
+    </ul>
+
+    <div class="price">Devis personnalisé</div>
+</div>
+
+    </div>
+</section>
+
+<section id="realisations">
+    <h2>Nos Réalisations</h2>
+
+    <div class="realisation">
+        <img src="images/site-business.jpg" alt="Portfolio juriste">
+
+        <div class="realisation-info">
+            <div class="realisation-text">
+                <h3>Portfolio Juriste</h3>
+                <p>Design moderne avec galerie projets et CV téléchargeable.</p>
+            </div>
+
+            <a href="https://juristedakar.org/" target="_blank" class="button">
+                Visiter le site
+            </a>
+        </div>
+    </div>
+</section>
+
+<section id="processus">
+    <h2>Comment ça fonctionne ?</h2>
+
+    <div class="process-steps">
+        <div>1️⃣ Analyse de votre demande</div>
+        <div>2️⃣ Validation + acompte de 50%</div>
+        <div>3️⃣ Conception & développement</div>
+        <div>4️⃣ Livraison + paiement du solde</div>
+    </div>
+</section>
+
+<section id="contact">
+    <h2>Commencer mon projet</h2>
+
+    <form onsubmit="sendWhatsApp(event)">
+
+        <input type="text" id="name" placeholder="Votre nom complet" required>
+        <input type="tel" id="phone" placeholder="Votre numéro WhatsApp" required>
+        <input type="email" id="email" placeholder="Votre email" required>
+
+        <select id="service">
+            <option value="Portfolio Étudiant">Portfolio Étudiant</option>
+            <option value="Mini Site Business">Mini Site Business</option>
+        </select>
+
+        <select id="budget" onchange="toggleCustomPack()">
+            <option value="Pack Start">Pack Start</option>
+            <option value="Pack Pro">Pack Pro</option>
+            <option value="Pack Personnalisé">Pack Personnalisé</option>
+        </select>
+
+        <div id="customPackField" style="display:none;">
+            <input type="text" id="customBudget"
+            placeholder="Décrivez vos besoins spécifiques (ex: e-commerce, réservation, blog, espace membre...)">
+        </div>
+
+        <textarea id="details" rows="5"
+        placeholder="Décrivez votre projet en détail (couleurs, style, fonctionnalités, délai souhaité...)" required></textarea>
+
+        <div class="acompte-info">
+            🔒 Un acompte de 50% est requis pour démarrer le projet.
+        </div>
+
+        <button class="button">Envoyer ma demande</button>
+
+    </form>
+</section>
+
+<section id="paiement">
+    <h2>Modes de paiement acceptés</h2>
+
+    <div class="payments">
+        <div class="payment-card">Orange Money</div>
+        <div class="payment-card">Wave</div>
+    </div>
+
+    <p style="margin-top:20px; opacity:0.7;">
+        Les informations de paiement sont communiquées après validation du projet.
+    </p>
+</section>
+
+<footer>
+© 2026 Elevate Digital – Dakar
+</footer>
+
+<div class="custom-cursor"></div>
+
+<script src="js/script.js"></script>
+
+</body>
+</html>
